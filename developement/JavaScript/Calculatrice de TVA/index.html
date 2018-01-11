@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculatrice</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+	<body>
+	<header>
+		<h2>Calculatrice de TVA</h2>
+	</header>
+	<main>
+		<form id="form">
+		<p>
+			<label for="montantHT">Montant HT</label> :
+			<input type="text" name="montantHT" id="montantHT" required value="5">
+		</p>
+		<p>
+			<input type="radio" name="remiseoui" id="remiseoui" value="remiseoui">
+			<label for="remiseoui">J'ai une remise</label
+		<br>
+			<input type="radio" name="remisenon" id="remisenon" value="remisenon">
+			<label for="remisenon">je n ai aps de remise</label>
+		</p>
+		<p>
+			<label for="remisede">Remise de :</label>
+			<select name="remisede" id="remisede">
+				<option value="10" selected>10%</option>
+				<option value="20">20%</option>
+				<option value="30">30%</option>
+				<option value="40">40%</option>
+				<option value="50">50%</option>
+			</select>
+		</p>
+		<input type="submit" value="Envoyer" onclick="">
+	</form>
+		<script src="tvacalculator.js"></script>
+	</main>
+	</body>
+</html>

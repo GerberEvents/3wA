@@ -1,0 +1,53 @@
+body{
+
+}
+
+header{
+  margin-top: 30px;
+}
+
+header input{
+
+}
+
+main{
+
+}
+
+.conteneur{
+  max-width: 1000px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.block{
+  height: 300px;
+  width: 400px;
+  background-color: #4169e1;
+  border-radius: 10px 10px 10px 10px;
+  text-align: center;
+  color: #fff;
+  transition: 250ms;
+  text-align: center;
+  margin: 30px auto;
+}
+.cacher{
+height: 0px;
+}
+
+.red{
+  background-color: red;
+}
+
+.bleu{
+  background-color: #4169e1;
+}
+
+
+.green{
+  background-color: green;
+}
+
+.texte{
+  padding-top: 30px;
+}

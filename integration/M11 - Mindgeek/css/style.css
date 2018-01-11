@@ -1,0 +1,211 @@
+/* FONT FACE */
+/* Appelle les polices de la page */
+@import url('https://fonts.googleapis.com/css?family=Candal|Open+Sans');
+/*GLOBAL */
+/* Balises et class appelés à plusieurs endroits dans la page */
+h1, h2, h3, h4{
+  font-family: 'Candal', sans-serif;
+  font-weight: normal;
+}
+
+h1{
+  font-size: 3em;
+}
+
+h2{
+  font-size: 1.8em;
+  color: #2F4155;
+  width: 100%;
+  line-height: 3.5em;
+  text-align: center;
+  border-top: 1px dashed #2F4155;
+  border-right: 1px dashed #2F4155;
+  border-left: 1px dashed #2F4155;
+}
+
+h3{
+  font-size: 1.2em;
+  padding: 15px 0 30px 0;
+}
+
+
+.contenaire{
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/* HEADER */
+/* Ce qui concerne le header et la nav */
+header{
+  display: flex;
+}
+
+header nav{
+display: flex;
+width: 100%;
+padding: 50px 0;
+}
+
+header nav a {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  color: #1F3E49;
+  font-family: 'Candal', sans-serif;
+}
+header nav a i.fa{
+  color: #F6899B;
+  font-size: 1.8em;
+}
+
+/* MAIN */
+/* Ce qui concerne le corps du site */
+
+main section article h3 i.fa{
+  font-size: 1.5em;
+}
+
+main section.bannerhome{
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-family: 'Candal', sans-serif;
+  text-align: center
+}
+
+main section.bannerhome h1{
+  padding-top: 100px;
+}
+
+main section.bannerhome p{
+  margin-bottom: 0;
+  font-size: 1em;
+  padding-bottom: 100px;
+}
+
+main section.recherche{
+    background-color: #F6899B;
+    font-family:'Open Sans', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+main section.recherche p{
+    width: 100%;
+    padding: 10px 0;
+}
+
+main section.articlex3{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main section h2{
+  flex-basis: 100%;
+  margin-top: 60px;
+}
+
+main section.articlex3 article{
+    flex: 1;
+}
+
+main section.articlex3 article h3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    color: #F6899B;
+}
+
+main section article p{
+    color: grey;
+    padding: 0 20px;
+}
+
+main section.articlex3 article p{
+    padding-bottom: 50px;
+}
+
+main section.articlex3 article strong{
+  display: block;
+  text-align: center;
+  color:  #F6899B;
+}
+
+
+main section.articlex3 article.tarif{
+    align-self: flex-start;
+    border: 1px dashed #2F4155;
+    padding: 5px 5px;
+    margin: 30px 10px;
+}
+
+main section.articlex3 article.tarif h4{
+  background-color: #29404F;
+  color: #fff;
+  text-align: center;
+  padding: 10px 15px;
+  margin: 0 auto;
+}
+
+main section.articlex3 article.tarif ul li{
+  color: grey;
+  list-style-type: circle;
+}
+main section.articlex3 article.tarif input{
+  background-color: #F6899B;
+  color: #fff;
+  border:none;
+  width: 100%;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+
+
+main section.articlex3 article.tarif strong{
+  display: block;
+  text-align: center;
+  color:  grey;
+}
+
+
+/* FOOTER */
+/* Ce qui concerne le footer */
+
+footer{
+  background-color: #29404F;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer nav{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+footer nav a{
+  display: flex;
+  text-align: center;
+  padding-top: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer small{
+flex-basis: 100%;
+text-align: center;
+padding-top: 30px;
+color: #fff;
+text-decoration: none;
+}
+footer small a{
+  text-decoration: none;
+  color: #fff;
+}
+
+footer small img{
+    width: 5%;
+}

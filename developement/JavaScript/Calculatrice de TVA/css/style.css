@@ -1,0 +1,12 @@
+body{
+	max-width: 750px;
+	margin: 0 auto 0 auto;
+	font-family: Verdana, sans-serif;
+}
+
+header{
+	background-color: #B6CC28;
+}
+h2{
+	text-align: center;
+}

@@ -1,0 +1,44 @@
+/* FONT FACE */
+/* Appelle les polices de la page */
+body{
+  background-image: url(../images/concrete_seamless.png);
+  background-repeat:repeat;
+}
+/*GLOBAL */
+/* Balises et class appelés à plusieurs endroits dans la page */
+.contener{
+  width: 900px;
+  margin: 0 auto;
+}
+/* HEADER */
+/* Ce qui concerne le header et la nav */
+.toolbar{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pointer{
+  cursor:  pointer;
+}
+
+.cacher{
+display: none;
+}
+
+.fa{
+  border: 1px solid grey;
+  padding: 5px 10px;
+  margin: 0 10px;
+}
+
+/* MAIN */
+/* Ce qui concerne le corps du site */
+
+main section{
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+/* FOOTER */
+/* Ce qui concerne le footer */

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+
+body{
+font-size: 1.6rem; /* police par defaut */
+font-family: 'Open Sans', sans-serif;
+margin: 0 auto 0 auto;
+background-color: #F2F0F4;
+}
+
+.conteneur{
+  padding: 0 30px 0 30px
+
+}
+h1{
+  font-size: 4rem;
+}
+
+h2{
+  font-size: 2.4rem;
+}
+
+header{
+text-align: center;
+}
+header a{
+  background-color: #41A792;
+  color: #fff;
+  padding:;
+  text-decoration: none;
+  text-align: center;
+
+}
+
+header a img{
+  text-align: center;
+}
+header nav{
+
+
+}
+
+main{
+}

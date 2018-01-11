@@ -1,0 +1,56 @@
+body{
+	font-family:serif;
+}
+
+/* couleur */
+.rouge{
+  color:red
+}
+
+.bleu{
+  color:blue
+}
+
+.vert{
+  color:green
+}
+
+/* fond de balise */
+
+.bgrouge{
+  background-color:red;
+}
+
+.bgbleu{
+  background-color:blue;
+}
+
+.bgvert{
+  background-color:green;
+}
+
+
+/* font */
+
+
+
+.arial{
+		font-family:Arial;
+}
+
+.monospace{
+	font-family:monospace;
+  
+}
+/*image footer*/
+.img3wc{
+	display: table;
+	height: 60px;
+	margin: auto;
+}
+
+.copyright{
+	text-align: center;
+	font-size: 10px;
+
+}

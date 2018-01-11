@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title></title>
+
+</head>
+<body>
+    <table>
+
+        <?php
+        foreach ($lines as $line)
+          {?>
+          <tr>
+            <td>
+              <a href='order_form.php?order=<?= $line["orderNumber"]?>'>
+                <?= $line['orderNumber'] ?>
+              </a>
+            </td>
+            <td>
+                <?= $line['orderDate'] ?>
+            </td>
+            <td>
+                <?= $line['productName'] ?>
+            </td>
+          </tr>
+
+        <?php
+          }
+        ?>
+
+        </table>
+</body>
+</html>

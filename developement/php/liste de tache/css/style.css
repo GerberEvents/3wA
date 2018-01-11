@@ -1,0 +1,126 @@
+/* FONT FACE */
+/* Appelle les polices de la page */
+
+
+
+/*GLOBAL */
+/* Balises et class appelés à plusieurs endroits dans la page */
+
+html{
+font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  background-color:;
+}
+
+.contener{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+h3{
+  margin-top: 0;
+  border-bottom: 1px solid grey;
+}
+
+header h1{
+  text-align: center;
+}
+
+
+/* HEADER */
+/* Ce qui concerne le header et la nav */
+header.header{
+  background-color: #FEB200;
+  margin: 30px auto;
+}
+/* MAIN */
+/* Ce qui concerne le corps du site */
+
+main{
+display: flex;
+}
+
+.listeTache{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+main div.listeTache section {
+}
+main div.listeTache section article.tache{
+  margin-bottom: 30px;
+  border: 1px grey solid;
+  padding: 20px;
+}
+
+main div.listeTache section article.tache header{
+  display: flex;
+  justify-content: space-between;
+}
+
+main div.listeTache section article.tache nav{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.button{
+margin-left: 10px;
+background-color:rgba(254, 178, 0, 0.5);
+color: #fff;
+border: #FEB200;
+padding: 10px 15px;
+cursor: pointer;
+color: #000;asideFormumlaire
+}
+main div.listeTache section article.tache footer{
+overflow: hidden;
+}
+
+main aside{
+width: 20%;
+margin-top: 40px;
+}
+
+main aside form{
+
+  display: block;
+}
+
+.asideFormumlaire{
+  border: 1px #FEB200 solid;
+  padding: 20px;
+  background-color: rgba(254, 178, 0, 0.5);
+  margin-top: 77px;
+}
+
+main aside button.button{
+
+  background-color:rgba(254, 178, 0, 0.5);
+  color: #fff;
+  border: #FEB200;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.fa-warning:before, .fa-exclamation-triangle:before{
+ padding: 0 40px;
+ font-size: 400%;
+}
+
+.idNumber{
+  display: none;
+}
+
+.block{
+  height: 0px;
+  width: 100%;
+  transition: 250ms;
+  margin: 30px auto;
+}
+.afficher{
+height: 120px;
+}
+
+/* FOOTER */
+/* Ce qui concerne le footer */

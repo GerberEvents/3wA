@@ -1,0 +1,583 @@
+/* FONT FACE */
+/* Appelle les polices de la page */
+@import  url('https://fonts.googleapis.com/css?family=Amaranth|Open+Sans');
+/*GLOBAL */
+/* Balises et class appelés à plusieurs endroits dans la page */
+Html{
+font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  background-color: #F2F2F2;
+}
+
+.conteur{
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4{
+color: #91B317;
+font-family: 'Amaranth', sans-serif;
+font-weight: normal;
+}
+h1{
+  text-align: center;
+}
+
+h2{
+  position: relative;
+}
+h2::before{
+  content:"";
+  background-color:#666359;
+  height: 1px;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 20px;
+
+}
+h2 span{
+background-color: #fff;
+color: #91B317;
+position: relative;
+z-index: 2;
+text-align: left;
+padding: 0 5px;
+
+}
+
+main section a{
+  color: #666359;
+  font-family: 'Amaranth', sans-serif;
+}
+img{
+  max-width: 100%;
+}
+/* HEADER */
+/* Ce qui concerne le header et la nav */
+header{
+  background-image: url('../img/bg.jpg');
+}
+
+header div.top{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+header div.top p{
+  flex-basis: 100%;
+  margin: 0;
+  color:#fff;
+  text-align: center;
+  background-color: rgba(129, 152, 24, 0.5);
+}
+header div.top img{
+  display: flex;
+  margin: 0;
+  align-content: flex-start;
+  margin-top: -30px;
+  width: 8%
+}
+
+header div.uppernav{
+  display: flex;
+  justify-content: space-between;
+}
+
+header div.uppernav p i.fa{
+  background-color: rgba(129, 152, 24, 0.5);
+  border: 1px #D0DE9A solid;
+  color: #D0D#91B317E9A;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+
+header div.uppernav p, span{
+  color: #fff;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 20#91B317px 0;
+}
+
+header nav a{
+  color: #fff;
+  text-transform: uppercase;
+}
+/* MAIN */
+/* Ce qui concerne le corps du site */
+
+main section.noel img{
+  width: 100%;
+}
+
+main section.noel p{
+    color: #666359;
+    font-size: 11px;
+    text-align: center;
+}
+main section.noel div.slider img{
+  width: 100%;
+}
+
+
+#slideshow:before {
+	left:0;
+	transform: rotate(-4deg);
+}
+#slideshow:after {
+	right:0;
+	transform: rotate(4deg);
+}
+
+/* gestion des dimensions et débordement du conteneur */
+#slideshow .container {
+	position:relative;
+	max-width: 1100px;
+	height: 310px;
+	overflow: hidden;
+}
+
+
+#slideshow .slider {
+	position: absolute;
+	left:0; top:0;
+	width: 100%;
+
+}
+
+/* annulation des marges sur figure */
+#slideshow figure {
+	position:relative;
+	display:inline-block;
+	padding:0; margin:0;
+}
+
+
+
+/* fonction d'animation, n'oubliez pas de prefixer ! */
+@keyframes slider {
+	0%, 20%, 100%	{ left: 0 }
+	25%, 45%		{ left: -100% }
+	50%, 70%		{ left: -200% }
+	75%, 95%		{ left: -300% }
+}
+
+/* complétez le sélecteur : */
+#slideshow .slider {
+	/* ... avec la propriété animation */
+	animation: slider 32s infinite;
+}
+
+
+main section.tea{
+  background-color: #fff;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+main section.tea h2{
+  flex-basis: 100%;
+  text-align: center;
+
+}
+
+main section.tea article{
+  display: flex;
+
+
+  flex-direction: column;
+}
+
+main section.tea article img{
+  flex: 1;
+}
+main section.tea article a{
+  text-align: center;
+}
+
+main section.selectionProduit{
+  background-color: #fff;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+main section.#91B317selectionProduit article{
+  width: 30%;
+  text-align: center;
+}
+
+main section.selectionProduit article a, strong, p{
+  color: #666359;
+}
+
+main section.selectionProduit article img{
+width: 80%;
+}
+
+main section.selectionProduit article p:nth-child(2), strong, a{
+  display: block;
+}
+
+main section.selectionProduit article a{
+  border: none;
+  text-align: center;
+  padding: 15px 20px;
+  background-color: #AC9068;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  margin: 20px auto;
+}
+
+/* Page LISTING */
+
+main section.listing{
+  background-color: #fff;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+main section.listing div{
+overflow: hid#91B317den;
+}
+
+main section.listing div h2{
+
+
+}
+main section.listing div p{
+padding-right: 30px;
+}
+
+main section.listing div img{
+  padding: 30px 0 0 0;
+  float: left;
+  position: relative;
+  z-index: 2;
+}
+
+main section.listing article{
+  width: 30%;
+  text-align: center;
+}
+
+main section.listing article a, strong, p{
+  color: #666359;
+}
+
+main section.listing article img{
+width: 80%;
+}
+
+main section.listing article p:nth-child(2), strong, a{
+  display: block;
+}
+
+main section.listing article a{
+  border: none;
+  text-align: center;
+  padding: 15px 20px;
+  background-color: #AC9068;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  margin: 20px auto;
+}
+/* Page about */
+
+main section.about{
+ background-color: #fff;
+ overflow: hidden;
+ padding: 30px
+}
+main section.about h1{
+    color: #666359;
+    text-align: left;
+}
+main section.about article.amelie img{
+  float: left;
+  padding: 25px;
+}
+main section.about article h2{
+  padding-left: 5px;
+}
+
+main section.about article.xavier img{
+  float: right;
+  padding: 25px;
+}
+
+main section.about section.concept{
+  background-color: #E9EFCE;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+main section.about section.concept article{
+  width: 32%;
+  padding: 25px;
+}
+
+main section.about section.concept article strong{
+  font-family: 'Amaranth', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+main section.about section.concept article img{
+  width: 30%;
+}
+
+
+
+/* page Produit*/
+
+main section.product{
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+main section.product div.ref{
+  text-align: left;
+}
+main section.product div.ref h1{
+  text-align: left;
+  color:#666359;
+}
+
+
+
+main section.product div.optionAchat{
+  text-align: right;
+}
+
+main section.product div.optionAchat span i{
+  margin-top: 40px;
+}
+
+main section.product div.optionAchat span i{
+  font-size: 25px;
+}
+main section.product div.optionAchat span i.fa.j{
+  color:	#FFD700;
+}
+main section.product div.optionAchat span i.fa.g{
+  color: 	#C0C0C0;
+}
+main section.product div.optionAchat span.custom-dropdown{
+margin-top: 150px;
+}
+
+main section.product div.optionAchat a.bouton{
+  border: none;
+  text-align: center;
+  padding: 15px 20px;
+  background-color: #AC9068;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  margin: 20px auto;
+}
+
+main section.product div.optionAchat a.avis, a.listeEnvie{
+  font-family: 'Open Sans', sans-serif;
+  color:#91B317;
+}
+main section.product div.optionAchat a.listeEnvie i.fa{
+  color:red;
+}
+
+
+main section.legende{
+  background-color: #fff;
+  padding: 30px;
+}
+main section.legende p.Ptop{
+  margin-top:0;
+}
+
+
+
+
+.custom-dropdown--large {
+    font-size: 1.5em;
+}
+
+.custom-dropdown--small {
+    font-size: .7em;
+}
+
+.custom-dropdown__select{
+    font-size: inherit; /* inherit size from .custom-dropdown */
+    padding: .5em; /* add some space*/
+    margin: 0; /* remove default margins */
+}
+
+.custom-dropdown__select--white {
+    background-color: #fff;
+    color: #444;
+}
+
+@supports (pointer-events: none) and
+      ((-webkit-appearance: none) or
+      (-moz-appearance: none) or
+      (appearance: none)) {
+
+    .custom-dropdown {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .custom-dropdown__select {
+        padding-right: 2.5em; /* accommodate with the pseudo elements for the dropdown arrow */
+        border: 1 solid #C0C0C0;
+        border-radius: 3px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    .custom-dropdown::before,
+    .custom-dropdown::after {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .custom-dropdown::after { /*  Custom dropdown arrow */
+        content: "\25BC";
+        height: 1em;
+        font-size: .625em;
+        line-height: 1;
+        right: 1.2em;
+        top: 50%;
+        margin-top: -.5em;
+    }
+
+    .custom-dropdown::before { /*  Custom dropdown arrow cover */
+        width: 2em;
+        right: 0; top: 0; bottom: 0;
+        border-radius: 0 3px 3px 0;
+    }
+
+    .custom-dropdown__select[disabled] {
+        color: rgba(0,0,0,.3);
+    }
+
+    .custom-dropdown.custom-dropdown--disabled::after {
+        color: rgba(0,0,0,.1);
+    }
+
+    /* White dropdown style */
+    .custom-dropdown--white::before {
+        top: .5em; bottom: .5em;
+        background-color: #fff;
+        border-left: 1px solid rgba(0,0,0,.1);
+    }
+
+    .custom-dropdown--white::after {
+        color: rgba(0,0,0,.9);
+    }
+
+    /* FF only temp fix */
+    @-moz-document url-prefix() {
+        .custom-dropdown__select              { padding-right: .9em }
+        .custom-dropdown--large .custom-dropdown__select { padding-right: 1.3em }
+        .custom-dropdown--small .custom-dropdown__select { padding-right: .5em }
+    }
+}
+
+
+/* FOOTER */
+/* Ce qui concerne le footer */
+footer{
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+  margin-top: 50px;
+}
+
+footer section{
+  background-color: rgba(129, 152, 24, 0.5);
+  text-align: center;
+}
+footer section div.footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+footer section div.footer div{
+  margin: 20px auto;
+}
+
+footer section div.footer div p{
+  text-transform: uppercase;
+}
+
+footer section div.footer div i.fa{
+  color: #fff;
+  font-size: 18px;
+}
+
+footer nav.navFooter{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px 0 40px 0;
+}
+
+footer nav.navFooter div{
+text-align: center;
+}
+
+footer nav.navFooter div h4{
+ color: #fff;
+ text-transform: uppercase;
+ font-size: 18px;
+}
+footer nav.navFooter div a{
+  color: #fff;
+  font-size: 12px;
+}
+
+footer div.small{
+  background-color: rgba(129, 152, 24, 0.5);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+footer div.small small  img{
+  text-align: center;
+  margin: 15px auto;
+  width: 5%;
+}
+
+footer div.small small p {
+  color: #fff;
+
+}
+footer div.small small p a{
+  display: inline;
+  color: #fff;
+}

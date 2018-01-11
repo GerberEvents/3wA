@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300');
+
+body{
+	background-image: url(../img/fond.png);
+	font-family: Verdana, sans-serif;
+	margin: 0px;
+}
+
+header, main{
+	max-width: 750px;
+	margin: 0 auto 0 auto;
+}
+
+header{
+	background-color: #B6CC28;
+	padding: 25px ;
+	overflow: hidden;
+}
+nav{
+	margin-right: 25px;
+	margin: 50px 0 auto 0;
+	float: right;		
+}
+		
+nav a{
+	color: #324A24;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.3em;
+	padding: 0 30px;
+}
+nav a:hover, nav a:focus {
+	color: #DDE95F;
+	transition-property: color;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+}
+h2{
+	color: #B6CC28;
+	margin: 0 0 0 auto;
+	padding-top: 20px;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	}
+
+main{
+	background-color: #FFFFFF;
+	padding: 25px;
+	}
+
+article{
+overflow: hidden;
+}
+
+article img{
+	float: left;
+	width: 200px;
+	margin: 0 10px 5px 0;
+}
+
+article p{
+	font-size: 1.2em;
+	color: grey;
+}
+
+article a {
+	float: right;
+	display: block;
+	padding: 10px 25px 10px 15px;
+	background-color: #B6CC28;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+article a:hover, article a:focus {
+	background-color: #364C29;
+	transition-property: background-color;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+}
+
+/* Chevron*/
+article a{
+	position:relative;
+	display:inline-block;
+}
+
+article a::before,
+article a::after{
+	position:absolute;
+	display:block;
+	content:'';
+	border:10px solid transparent;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-transform: rotate(-90deg);
+}
+
+article a::before{
+	top: 9px;
+	right: -1px;
+	border-top-color:#fff;
+}
+
+article a::after{
+	top: 9px;
+	right: 2px;
+	border-top-color:#B6CC28;
+}
+article a:hover::after, article a:focus::after{
+	border-top-color: #364C29;
+	transition-property: border-top-color;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+}
+
+article ul{
+	font-size: 1.1em;
+	color: grey;
+}
+
+small{
+	font-size : 0.7em;
+	text-align: center;
+	text-indent : 0px;
+	line-height : 20px;
+	color: grey;
+}
+
+small a{
+	color: #B6CC28;
+	text-decoration: none;
+}
+
+small img{
+	display: table;
+	height: 60px;
+	margin: 40px auto 15px auto;
+}

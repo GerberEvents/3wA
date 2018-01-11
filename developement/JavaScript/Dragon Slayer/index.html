@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="fr">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Dragon Slayer</title>
+</head>
+<body>
+  <header class="contenaire">
+    <img src="images/logo.png" alt="">
+  </header>
+  <main class="contenaire">
+	<form name="data" id="show">
+		<fieldset>
+			<legend><h2>Votre arme</h2></legend>
+			<label for="weapon">Epée courte</label>
+			<input type="radio" name="weapon" value="shortSword">
+			<label for="weapon">Epée longue</label>
+			<input type="radio" name="weapon" value="longSword">
+			<label for="weapon">Lance</label>
+			<input type="radio" name="weapon" value="lance">
+		</fieldset>
+		<fieldset id="armorChoice">
+			<legend><h2>Votre armure</h2></legend>
+			<label for="armor">Armure légère</label>
+			<input type="radio" name="armor" value="lightArmor">
+			<label for="armor">Armure moyenne</label>
+			<input type="radio" name="armor" value="mediumArmor">
+			<label for="armor">Armure lourde</label>
+			<input type="radio" name="armor" value="heavyArmor">
+		</fieldset>
+		<fieldset>
+			<legend><h2>La difficulté du combat</h2></legend>
+			<label for="difficulty">1</label>
+			<input checked type="radio" name="difficulty">
+			<label for="difficulty">2</label>
+			<input type="radio" name="difficulty">
+			<label for="difficulty">3</label>
+			<input type="radio" name="difficulty">
+		</fieldset>
+		<fieldset>
+			<input id="fight" type="button" value="Lancer le combat !">
+		</fieldset>
+	</form>
+	<form id="hide">
+		<fieldset>
+			<legend><h2>Console</h2></legend>
+      <div class="combattants">
+        <div class="posImg1 ailleImg1"><img src="images/dragon2.png" alt=""></div>
+        <div class="posImg2 ailleImg2"><img src="images/knight.png" alt=""></div>
+      </div>
+			<input id="console" type="text" disabled>
+		</fieldset>
+		<fieldset>
+			<legend><h2>Action Joueur</h2></legend>
+			<label for="action">Attaquer</label>
+			<input type="radio" name="playerAction" value="attack">
+			<label for="action">Attaque puissante</label>
+			<input type="radio" name="playerAction" value="bigAttack">
+			<label for="action">Défense</label>
+			<input type="radio" name="playerAction" value="defense">
+      <label for "action">Aléatoire</label>
+      <input type ="radio" name="playerAcion" value="Aléatoire"
+		</fieldset>
+    <fieldset>
+      <input id="turnEnd" type="button" value="Fin de tour">
+    </fieldse>
+  </main>
+
+	<script src="js/dragon-slayer.js"></script>
+	<script src="js/utilities.js"></script>
+</body>
+</html>

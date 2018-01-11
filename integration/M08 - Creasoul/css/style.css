@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+font-size: 1.6rem; /* police par defaut */
+font-family: 'Open Sans', sans-serif;
+margin: 0 auto;
+background-color: #F2F0F4;
+color: #727477;
+padding: 20px;
+}
+
+
+h1{
+  font-size: 3rem;
+  color: #41A792;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-bottom: 1px solid #41A792;
+  margin-bottom: 0;
+  padding-bottom: 25px;
+  line-height: 1.5em;
+
+}
+
+h2{
+  font-size: 2.4rem;
+  color: #41A792;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-bottom: 1px solid #41A792;
+  margin-bottom: 0;
+  padding-bottom: 15px
+}
+header{
+text-align: center;
+}
+
+header a img {
+margin: 15px auto 15px auto;
+
+}
+
+header nav a{
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 30px 15px;
+  font-size: 2.50rem;
+}
+
+header nav{
+background-color: #41A792;
+text-align: center;
+
+}
+
+main section img{
+width: 100%;
+}
+
+main section p{
+text-align: justify;
+font-size: 1.2rem;
+line-height: 2em;
+}
+
+aside{
+  display: none;
+}
+
+@media (min-width: 768px) {
+  header nav a{
+    display: block;
+    padding: 40px 150px;
+    font-size: 2.5rem;
+  }
+  aside{
+    display: block;
+    background-color: #B8DCAF;
+    padding: 20px;
+  }
+  aside h4 {
+    color:  #41A792;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-bottom: 1px solid #41A792;
+    margin-bottom: 0;
+
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  .conteneur{
+  max-width: 1570px;
+  }
+
+  header nav a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 15px;
+    width: 30%;
+    font-size: 2.5rem;
+  }
+
+  header nav{
+  background-color: #41A792;
+  }
+
+  main section{
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    overflow: hidden;
+  }
+
+  main section p{
+  text-align: justify;
+  font-size: 1.5rem;
+  line-height: 2em;
+  padding-right: 20px;
+  }
+
+  main section img{
+
+  width: 98%
+  }
+
+
+  main aside{
+    display: inline-block;
+    width: 30%;
+    background-color: #B8DCAF;
+    padding: 0px;
+    float: right;
+  }
+  main aside section{
+    width: 100%;
+  }
+  main aside h4{
+    font-size: 2rem;
+    padding: 0 20px;
+  }
+  main aside p{
+    font-size: 1.50rem;
+    padding: 0 20px;
+
+  }
+
+}
+
+footer{
+  display: block;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}

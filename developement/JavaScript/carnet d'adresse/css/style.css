@@ -1,0 +1,45 @@
+/* FONT FACE */
+/* Appelle les polices de la page */
+
+/*GLOBAL */
+/* Balises et class appelés à plusieurs endroits dans la page */
+body{
+  background-color: #00C8F0;
+}
+
+
+.contener{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+a i{
+  text-decoration: none;
+  color: #fff;
+
+}
+/* HEADER */
+/* Ce qui concerne le header et la nav */
+
+/* MAIN */
+/* Ce qui concerne le corps du site */
+.block{
+  display:flex;
+  justify-content: space-around;
+}
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+form h2{
+  text-align: center;
+}
+input{
+  margin-bottom: 15px;
+}
+/* FOOTER */
+/* Ce qui concerne le footer */

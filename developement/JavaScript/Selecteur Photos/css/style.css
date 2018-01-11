@@ -1,0 +1,50 @@
+/* FONT FACE */
+/* Appelle les polices de la page */
+
+/*GLOBAL */
+/* Balises et class appelés à plusieurs endroits dans la page */
+ body{
+
+ }
+
+.conteneur{
+   width: 800px;
+   margin: 0 auto;
+}
+/* HEADER */
+/* Ce qui concerne le header et la nav */
+
+/* MAIN */
+/* Ce qui concerne le corps du site */
+li {
+  list-style-type: none;
+  display: inline;
+  margin: 1em;
+
+}
+
+img {
+border: 3px solid #fff
+
+}
+
+.selectImage{
+  border: 3px solid forestgreen;
+}
+/* FOOTER */
+/* Ce qui concerne le footer */
+
+.onMouseOver{
+  border: 3px solid silver;
+}
+
+span{
+  font-style: italic;
+}
+
+#div1 {
+    width: 350px;
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
